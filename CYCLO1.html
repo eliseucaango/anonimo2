@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>  
+	.container {
+       	position: absolute;
+		width: 100%;
+		overflow: hidden !important;
+		height: calc(100% - 60px);
+		display: flex;
+		top: 0;
+		left: 0;
+       }
+	.container > div {
+		flex: 0 0 100%;
+		margin: 0;
+		position: relative;
+       	display: block;
+       	overflow: hidden;
+	} 
+	#tela-1 {
+		background: mediumslateblue;
+	}
+	#tela-2 {
+		background: mediumseagreen;
+	}
+	#tela-3 {
+		background: mediumpurple;
+	}
+	#tela-4 {
+		background: mediumblue;
+	}
+	nav {
+		display: flex;	
+		justify-content: space-around;
+		align-items: center;
+		background: rgb(60, 60, 80);
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		height: 60px;
+		width: 100%;
+		
+      }
+	nav a {
+		text-decoration: none;	
+		color: white;
+		text-align: center;
+		
+      }
+	nav a:hover {
+		color: gainsboro;
+	}
+h1{
+	text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ letter-spacing: 7px;
+ color: rgb(52, 54, 54);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+	<div id='tela-1'>
+        <h1>Bem vindo</h1>
+        <input type="checkbox">
+        <label class="eli" for="che">
+            <i class="Escuro"></i>
+            <i class="noite"></i>
+            <div class="bullo"></div>
+        </label>
+    </div>
+	<div id='tela-2'></div>	
+	<div id='tela-3'></div>
+	<div id='tela-4'></div>
+    </div>
+    <nav>
+	<a href="#tela-1">Início</a>
+	<a href="#tela-2">explorar</a>
+	<a href="#tela-3">criar</a>
+	<a href="#tela-4">perfil</a>
+    </nav>
+
+</body>
+</html>
